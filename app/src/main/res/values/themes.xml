@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViewsReview" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/lighter_blue</item>
+        <item name="colorPrimaryDark">@color/light_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimaryFixedVariant">@color/pale_white</item>
+        <item name="colorOnPrimaryFixed">@color/pale_light_blue</item>
+
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/dark_gray</item>
+
+        <item name="colorOnPrimaryContainer">@color/orange</item>
+        <item name="colorOnSurface">@color/light_blue</item>
+
+    </style>
+
+    <style name="Theme.ViewsReview" parent="Base.Theme.ViewsReview" />
+</resources>

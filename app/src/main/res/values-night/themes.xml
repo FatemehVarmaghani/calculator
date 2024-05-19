@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViewsReview" parent="Theme.Material3.DayNight.NoActionBar">
+
+         <item name="colorPrimary">@color/darker_blue</item>
+         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimaryFixedVariant">@color/pale_white</item>
+        <item name="colorOnPrimaryFixed">@color/pale_darker_blue</item>
+
+         <item name="colorSecondary">@color/dark_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorOnPrimaryContainer">@color/orange</item>
+        <item name="colorOnSurface">@color/lighter_blue</item>
+
+    </style>
+</resources>
