@@ -93,7 +93,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_parenthesis"
+                android:id="@+id/btn_parenthesis_open"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -102,13 +102,13 @@
                 android:focusable="true"
                 android:fontFamily="@font/roboto_light"
                 android:gravity="center"
-                android:text="( )"
+                android:text="("
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_percent"
+                android:id="@+id/btn_parenthesis_close"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -118,7 +118,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/roboto_light"
                 android:gravity="center"
-                android:text="%"
+                android:text=")"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="32sp"
                 android:textStyle="bold" />
@@ -352,7 +352,7 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/btn_floating_point"
+                android:id="@+id/btn_backspace"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -361,10 +361,11 @@
                 android:focusable="true"
                 android:fontFamily="@font/roboto_light"
                 android:gravity="center"
-                android:text="."
-                android:textColor="?attr/colorOnSecondary"
-                android:textSize="32sp"
+                android:text="X"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                android:textSize="28sp"
                 android:textStyle="bold" />
+
 
             <Button
                 android:id="@+id/btn_0"
@@ -382,7 +383,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_000"
+                android:id="@+id/btn_floating_point"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -391,9 +392,9 @@
                 android:focusable="true"
                 android:fontFamily="@font/roboto_light"
                 android:gravity="center"
-                android:text="000"
+                android:text="."
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="18sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <FrameLayout
