@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="?attr/colorSecondary"
     android:orientation="vertical"
-    android:weightSum="6"
+    android:weightSum="8"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:background="@drawable/shape_result_box"
         android:gravity="bottom|end"
         android:orientation="vertical">
@@ -31,27 +31,46 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:fontFamily="@font/poppins_semi_bold"
+                android:isScrollContainer="true"
                 android:maxLines="1"
+                android:scrollHorizontally="true"
                 android:text=""
-                android:textAlignment="viewEnd"
+                android:textAlignment="textEnd"
                 android:textColor="?attr/colorOnPrimaryFixedVariant"
                 android:textSize="18sp" />
 
         </HorizontalScrollView>
 
-        <TextView
-            android:id="@+id/txt_result"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            android:fontFamily="@font/poppins_extra_bold"
-            android:maxLines="1"
-            android:text=""
-            android:textAlignment="textEnd"
-            android:textColor="?attr/colorOnPrimary"
-            android:textSize="40sp" />
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_result_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:textAlignment="textEnd"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="40sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -64,7 +83,7 @@
         android:id="@+id/container_numbers_and_operators"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="5"
         android:paddingStart="12dp"
         android:paddingTop="12dp"
         android:paddingEnd="12dp"
@@ -78,7 +97,7 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/btn_c"
+                android:id="@+id/btn_clear"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
