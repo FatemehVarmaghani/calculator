@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnFloatingPoint.setOnClickListener {
-            if (resultString.isEmpty()) {
+            if (resultString.isEmpty() || checkLastOperator(resultString) || checkLastChar(resultString, '(')) {
                 appendToResult('0')
                 appendToResult('.')
             } else if (countFloatingPoint() == 0) {
@@ -290,11 +290,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun countFloatingPoint(): Int {
         var floatingPointCount = 0
-        for (char in resultString) {
+        var number = resultString
+
+        for (index in resultString.length - 1 downTo 0) {
+            if ("+-*/".contains(resultString[index])) {
+                number = resultString.substring(index, resultString.length)
+                break
+            }
+        }
+
+        for (char in number) {
             if (char == '.') {
                 floatingPointCount++
             }
         }
+
         return floatingPointCount
     }
 
